@@ -1,20 +1,17 @@
-prompt --application/deployment/definition
+prompt --application/deployment/checks
 begin
 --   Manifest
---     INSTALL: 100
+--     INSTALL CHECKS: 105
 --   Manifest End
 wwv_flow_imp.component_begin (
  p_version_yyyy_mm_dd=>'2024.11.30'
 ,p_release=>'24.2.0'
 ,p_default_workspace_id=>100000
-,p_default_application_id=>100
+,p_default_application_id=>105
 ,p_default_id_offset=>0
 ,p_default_owner=>'DEV'
 );
-wwv_flow_imp_shared.create_install(
- p_id=>wwv_flow_imp.id(8190939832124974)
-,p_prompt_sub_string_01=>'Y'
-);
+null;
 wwv_flow_imp.component_end;
 end;
 /
